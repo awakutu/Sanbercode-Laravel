@@ -17,3 +17,9 @@ Route::get('/create', 'AdminLteController@items_create');
 Route::get('/data-tables', 'AdminLteController@data_tables');
 Route::get('/', 'AdminLteController@items_index');
 
+Route::get('/pertanyaan', 'PertanyaanController@index');
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+Route::post('/pertanyaan', 'PertanyaanController@store');
+
+Route::get('jawaban/{id}', 'JawabanController@index');
+Route::post('jawaban/{id}', 'JawabanController@store');

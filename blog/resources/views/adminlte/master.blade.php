@@ -27,7 +27,12 @@
  @include('adminlte.partials.sidebar')
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-   @yield('content')
+      <!-- Content Header (Page header) -->
+    <section class="content-header">
+        @yield('header_content')
+    </section>
+    
+    @yield('content')
   </div>
   <!-- /.content-wrapper -->
 
